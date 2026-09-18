@@ -228,37 +228,15 @@
 <!-- ============================================================ -->
 <!-- PASTE YOUR WIDGET <script> TAG(S) BELOW THIS LINE             -->
 <script type="text/javascript">
-  window.CHATDRILL_WIDGET_KEY = "pk_live_0b3368f45825";
+  window.CHATDRILL_WIDGET_KEY = "pk_live_1fc12beb5b62";
+  window.CHATDRILL_API_URL = "https://api.chatdrill.com";
+</script>
+<!-- every page (or the shared footer), just before </body> -->
+<script type="text/javascript">
+  window.CHATDRILL_WIDGET_KEY = "pk_live_1fc12beb5b62";
   window.CHATDRILL_API_URL = "https://api.chatdrill.com";
 </script>
 <script type="text/javascript" src="https://api.chatdrill.com/widget-loader/widget.js" async></script>
-  window.addEventListener('load', function () {
-    setTimeout(function () {
-      const badge = document.getElementById('widget-status');
-      const selectors = [
-        'iframe',
-        '[id*="chat" i]', '[class*="chat" i]',
-        '[id*="widget" i]', '[class*="widget" i]',
-        '[id*="crisp" i]', '[class*="crisp" i]',
-        '[id*="chatguru" i]', '[class*="chatguru" i]',
-        '[id*="chatdrill" i]', '[class*="chatdrill" i]'
-      ];
-      let found = false;
-      selectors.forEach(function (sel) {
-        document.querySelectorAll(sel).forEach(function (el) {
-          if (el.id !== 'widget-status') found = true;
-        });
-      });
-      if (found) {
-        badge.className = 'success';
-        badge.innerText = '✅ Widget detected — check page corners for chat bubble';
-      } else {
-        badge.className = 'fail';
-        badge.innerText = '❌ No widget detected — check Console (F12) for errors';
-      }
-    }, 4000);
-  });
-</script>
 
 </body>
 </html>
