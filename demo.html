@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Nepal Digital Solutions — Web & App Development</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #222;
+    line-height: 1.6;
+  }
+
+  /* Header */
+  header {
+    background: #1a1a2e;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #a78bfa;
+  }
+  header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 15px;
+  }
+  header nav a:hover { color: #a78bfa; }
+
+  /* Hero */
+  .hero {
+    background: linear-gradient(135deg, #1a1a2e, #3d2b6b);
+    color: white;
+    padding: 100px 40px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+  .hero p {
+    font-size: 18px;
+    color: #d1c9f0;
+    max-width: 600px;
+    margin: 0 auto 30px;
+  }
+  .hero button {
+    background: #7c3aed;
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .hero button:hover { background: #6d28d9; }
+
+  /* Sections */
+  section {
+    padding: 70px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #1a1a2e;
+  }
+
+  .services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+  .service-card {
+    background: #f8f7fc;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #e5e0f5;
+  }
+  .service-card h3 {
+    color: #7c3aed;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .service-card p {
+    font-size: 14px;
+    color: #555;
+  }
+
+  .pricing {
+    background: #faf9fd;
+  }
+  .price-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .price-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  .price-card.featured {
+    border: 2px solid #7c3aed;
+    transform: scale(1.03);
+  }
+  .price-card .amount {
+    font-size: 32px;
+    color: #7c3aed;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+  footer {
+    background: #1a1a2e;
+    color: #aaa;
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+  }
+
+  /* Widget status badge (for testing only — remove in real production site) */
+  #widget-status {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #fff8e1;
+    color: #8a6d00;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-family: monospace;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    z-index: 9999;
+  }
+  #widget-status.success { background: #e6f9ee; color: #0a7d3c; }
+  #widget-status.fail { background: #fdeaea; color: #c0392b; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Nepal Digital Solutions</div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+     <a href="about.html">About</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>We Build Websites That Grow Your Business</h1>
+  <p>From landing pages to full-scale web apps — Nepal Digital Solutions helps startups and businesses launch fast, look great, and convert visitors into customers.</p>
+  <button>Get a Free Quote</button>
+</div>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="service-card">
+      <h3>Web Development</h3>
+      <p>Custom, responsive websites built with modern frameworks and best practices.</p>
+    </div>
+    <div class="service-card">
+      <h3>E-Commerce</h3>
+      <p>Online stores that are fast, secure, and easy for your customers to use.</p>
+    </div>
+    <div class="service-card">
+      <h3>App Development</h3>
+      <p>Cross-platform mobile apps for iOS and Android, built to scale.</p>
+    </div>
+    <div class="service-card">
+      <h3>UI/UX Design</h3>
+      <p>Clean, user-friendly designs that keep visitors engaged and coming back.</p>
+    </div>
+    <div class="service-card">
+      <h3>SEO & Marketing</h3>
+      <p>Get found on Google and grow your traffic with proven SEO strategies.</p>
+    </div>
+    <div class="service-card">
+      <h3>Support & Maintenance</h3>
+      <p>Ongoing updates, security patches, and technical support after launch.</p>
+    </div>
+  </div>
+</section>pk_live_8deb08cdd44d
+
+<section id="pricing" class="pricing">
+  <h2>Simple Pricing</h2>
+  <div class="price-cards">
+    <div class="price-card">
+      <h3>Starter</h3>
+      <div class="amount">$299</div>
+      <p>Single-page website, mobile responsive</p>
+    </div>
+    <div class="price-card featured">
+      <h3>Growth</h3>
+      <div class="amount">$799</div>
+      <p>Multi-page site + SEO setup</p>
+    </div>
+    <div class="price-card">
+      <h3>Enterprise</h3>
+      <div class="amount">Custom</div>
+      <p>Full web app with backend & integrations</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Get In Touch</h2>
+  <p style="text-align:center; color:#555;">Have a question? Use the chat widget in the corner, or email us at hello@nepaldigitalsolutions.test</p>
+</section>
+
+<footer>
+  &copy; 2026 Nepal Digital Solutions — Demo site for widget testing purposes only.
+</footer>
+
+<!-- ============================================================ -->
+<!-- PASTE YOUR WIDGET <script> TAG(S) BELOW THIS LINE             -->
+<script type="text/javascript">
+  window.CHATDRILL_WIDGET_KEY = "pk_live_0b3368f45825";
+  window.CHATDRILL_API_URL = "https://api.chatdrill.com";
+</script>
+<script type="text/javascript" src="https://api.chatdrill.com/widget-loader/widget.js" async></script>
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+      const badge = document.getElementById('widget-status');
+      const selectors = [
+        'iframe',
+        '[id*="chat" i]', '[class*="chat" i]',
+        '[id*="widget" i]', '[class*="widget" i]',
+        '[id*="crisp" i]', '[class*="crisp" i]',
+        '[id*="chatguru" i]', '[class*="chatguru" i]',
+        '[id*="chatdrill" i]', '[class*="chatdrill" i]'
+      ];
+      let found = false;
+      selectors.forEach(function (sel) {
+        document.querySelectorAll(sel).forEach(function (el) {
+          if (el.id !== 'widget-status') found = true;
+        });
+      });
+      if (found) {
+        badge.className = 'success';
+        badge.innerText = '✅ Widget detected — check page corners for chat bubble';
+      } else {
+        badge.className = 'fail';
+        badge.innerText = '❌ No widget detected — check Console (F12) for errors';
+      }
+    }, 4000);
+  });
+</script>
+
+</body>
+</html>
